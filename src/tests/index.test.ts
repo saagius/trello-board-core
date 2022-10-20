@@ -3,7 +3,7 @@ import App from '../app';
 import IndexRoute from '../routes/index.route';
 
 afterAll(async () => {
-  await new Promise(resolve => setTimeout(() => resolve(), 500));
+  await new Promise(resolve => setTimeout(() => resolve(undefined), 500));
 });
 
 describe('Testing Index', () => {
